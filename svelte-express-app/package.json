@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "node server/server.js"
+    "start": "nodemon server/server.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -19,8 +19,10 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongodb": "^4.7.0",
+    "nodemon": "^2.0.19",
     "sanitize-html": "^2.7.0",
     "sirv-cli": "^2.0.0"
   }
